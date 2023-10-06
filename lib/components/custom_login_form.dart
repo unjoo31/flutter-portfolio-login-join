@@ -47,7 +47,7 @@ class CustomLoginForm extends StatelessWidget {
                   if (_formKey.currentState!.validate()) {
                     UserRepository repo = UserRepository();
                     repo.login(_email.text.trim(), _password.text.trim());
-                    Navigator.pushNamed(context, "/login");
+                    Navigator.pushNamed(context, "/home");
                   }
                 },
                 child: Text("Sign Up"))

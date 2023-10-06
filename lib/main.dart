@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_join/pages/home_page.dart';
 import 'package:login_join/pages/join_page.dart';
 import 'package:login_join/pages/login_page.dart';
 import 'package:login_join/theme.dart';
@@ -15,8 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: theme(),
-      initialRoute: "/login",
+      initialRoute: "/join",
       routes: {
+        "/home": (context) => HomePage(),
         "/join": (context) => JoinPage(),
         "/login": (context) => LoginPage(),
       },

@@ -18,6 +18,7 @@ const MaterialColor primaryGreen = MaterialColor(
 
 ThemeData theme() {
   return ThemeData(
+    primaryColor: primaryGreen,
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
         backgroundColor: primaryGreen,
